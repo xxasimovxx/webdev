@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Poppins, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 23vw;
+    aspect-ratio: 0.94;
+    background-image: linear-gradient(to bottom right,rgb(0, 255, 213),rgb(140, 0, 255));
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.search-bar{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.search-bar .search-input{
+
+    width: 60%;
+    aspect-ratio: 12.0;
+    border: none;
+    border-radius: 18px;
+    background-color: white;
+    margin-right: 15px;
+    border: solid 3px rgb(232, 232, 232);
+    font-size: 18px;
+}
+
+.search-bar .search-input:hover{
+    background-color: rgb(233,233,233);
+    outline: none;
+}
+
+.search-bar .search-input:enabled{
+    outline: none;
+}
+
+.search-bar .search-button{
+    font-size: 18px;
+    font-weight: 100;
+    color: grey;
+    padding: 13px;
+    aspect-ratio: 1.0;
+    background-color: white;
+    border: none;
+    border-radius: 18px;
+    border: solid 3px rgb(232, 232, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar .search-button:active{
+    box-shadow: 0px 4px 4px rgb(14, 114, 128);
+    transform: translateY(2px);
+}
+
+.search-bar .search-button:hover{
+    background-color: rgb(233, 233, 233);
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.img-container .weather-image{
+    width: 45%;
+    aspect-ratio: 1.0;
+}
+
+.temperature{
+    margin-top: -4%;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 46px;
+    color: white;
+}
+
+.weather-stats{
+    margin-top: 8%;
+    margin-bottom: 8;
+    list-style: none;
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30%;
+}
+
+.weather-stats li{
+    font-size: 24px;
+    color: white;
+}
