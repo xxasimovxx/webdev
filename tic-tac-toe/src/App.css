@@ -1,0 +1,37 @@
+*{
+    background-color: #313131;
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(65, 121, 170);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.tile{
+    width: 100%;
+    height: 100%;
+}
+
+.separator-vertical{
+    height: 100%;
+    width: 10px;
+}
+
+.separator-horizontal{
+    height: 10px;
+    width: 100%;
+}
