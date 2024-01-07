@@ -15,23 +15,13 @@
 .container{
     width: 500px;
     height: 500px;
-    background-color: rgb(65, 121, 170);
+    background-color: black;
+    gap: 5px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, auto);
 }
 
 .tile{
     width: 100%;
     height: 100%;
-}
-
-.separator-vertical{
-    height: 100%;
-    width: 10px;
-}
-
-.separator-horizontal{
-    height: 10px;
-    width: 100%;
 }

@@ -4,24 +4,35 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 export default function App() {
-  const [count, setCount] = useState(0)
+  const tiles = [];
+  const [isO, setisO] = useState(true);
 
   return (
     <>
       <div className="container">
 
-      );
+        <div className="tile"></div>
+        <div className="tile"></div>
+        <div className="tile"></div>
+        <div className="tile"></div>
+        <div className="tile"></div>
+        <div className="tile"></div>
+        <div className="tile"></div>
+        <div className="tile"></div>
+        <div className="tile"></div>
 
       </div>
     </>
   )
 }
 
-function makeTiles(){
-  return(
-    for(let i = 0; i < 3; i++){
+// function makeTiles(){
+//   return(
+//     for (let i = 0; i < 3; i++){
       
-    }
-  );
-}
+
+//     }
+//   );
+// }
+
 
