@@ -1,36 +1,46 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 
+
 export default function App() {
-  const tiles = [];
+  const [tiles, setTiles] = useState([]);
   const [isO, setisO] = useState(true);
+
+function makeTiles(){
+      
+  for(let i = 1; i <=9; i++){
+    // console.log(i)
+    useEffect(()=>{
+
+    setTiles(currentTiles =>{
+      return[
+        ...currentTiles, 
+        {id: i, content: "blank"}
+      ]
+    })
+
+    console.log("once")
+
+    },[])
+
+  }}
+
+  makeTiles();
 
   return (
     <>
       <div className="container">
 
-        <div className="tile"><div className="circle"></div></div>
-        <div className="tile"><div className="blank"></div></div>
-        <div className="tile"></div>
-        <div className="tile"><div className="blank"></div></div>
-        <div className="tile"></div>
-        <div className="tile"></div>
-        <div className="tile"><div className="blank"></div></div>
-        <div className="tile"></div>
-        <div className="tile"></div>
+          {tiles.map(tile =>{
+            return(
+              <div key={tile.id} className="tile"><div className={tile.content}></div></div>
+            )
+          })}
 
       </div>
     </>
   )
 }
 
-// function makeTiles(){
-//   return(
-//     for (let i = 0; i < 3; i++){
-      
-
-//     }
-//   );
-// }
 
 
