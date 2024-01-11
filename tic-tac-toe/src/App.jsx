@@ -14,13 +14,11 @@ function makeTiles(){
 
     setTiles(currentTiles =>{
       return[
+
         ...currentTiles, 
         {id: i, content: "blank", isClicked: false}
       ]
     })
-
-    console.log("once")
-
     },[])
 
   }}
@@ -29,16 +27,20 @@ function changeTile(isO, id){
 
   setTiles(currentTiles =>{
     return currentTiles.map(tile => {
-      if (tile.id == id && !tile.isClicked){
-        tile.isClicked = true;
+      if ((tile.id == id) && (!tile.isClicked)){
         if(isO){
-          tile.content = "circle"
+
+          setisO(!isO)
+
+          return {id:id, content: "circle", isClicked: true}
         }else{
-          tile.content = "cross"
+          
+          setisO(!isO)
+          return {id:id, content: "cross", isClicked: true}
         }
         
-        setisO(!isO)
       }
+
       return tile
     })
   })
@@ -53,7 +55,7 @@ function changeTile(isO, id){
 
           {tiles.map(tile =>{
             return(
-              <div key={tile.id} className="tile"><button className={tile.content} onClick={changeTile(isO, tile.id)} ></button></div>
+              <div key={tile.id} className="tile"><button type="button" className={tile.content} onClick={() => changeTile(isO, tile.id)} ></button></div>
             )
           })}
 
