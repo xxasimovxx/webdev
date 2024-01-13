@@ -14,18 +14,12 @@ export default function App() {
     {combination: [2,5,8]},
     {combination: [3,6,9]},
     {combination: [1,5,9]},
-    {combination: [3,5,7]},
-
-]
-
-  console.log(winningCombinations[0])
-  
+    {combination: [3,5,7]},]
 
   function makeTiles(){
         
     for(let i = 1; i <=9; i++){
       // console.log(i)
-      useEffect(()=>{
 
       setTiles(currentTiles =>{
         return[
@@ -34,8 +28,6 @@ export default function App() {
           {id: i, content: "blank", isClicked: false}
         ]
       })
-      },[])
-
     }}
 
   function changeTile(isO, id){
@@ -46,7 +38,6 @@ export default function App() {
           if(isO){
 
             setisO(!isO)
-
             return {id:id, content: "circle", isClicked: true}
           }else{
             
@@ -59,14 +50,29 @@ export default function App() {
         return tile
       })
     })
+  }
+
+  function checkWinner(winningCombinations, tiles){
+
+    for(const {combination} of winningCombinations){
+
+      const tileValue1 = tiles[combination[0]-1].content
+      const tileValue2 = tiles[combination[1]-1].content
+      const tileValue3 = tiles[combination[2]-1].content
+    
+
+      if(tileValue1 != "blank" && tileValue2 == tileValue1 && tileValue3 == tileValue1){
+        
+        console.log("win");
+      }
+    
+  }    
 
   }
 
-  function checkWinner(){
-
-  }
-
-  makeTiles();
+  useEffect(()=>{
+    makeTiles()
+  },[])
 
   return (
     <>
@@ -74,10 +80,9 @@ export default function App() {
 
           {tiles.map(tile =>{
             return(
-              <div key={tile.id} className="tile"><button type="button" className={tile.content} onClick={() => changeTile(isO, tile.id)} ></button></div>
+              <div key={tile.id} className="tile"><button type="button" className={tile.content} onClick={() => changeTile(isO, tile.id)}></button></div>
             )
           })}
-
       </div>
     </>
   )
