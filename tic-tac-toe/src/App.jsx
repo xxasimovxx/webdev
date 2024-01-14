@@ -5,6 +5,7 @@ import './App.css'
 export default function App() {
   const [tiles, setTiles] = useState([]);
   const [isO, setisO] = useState(true);
+  const [change, setChange] = useState(true);
 
   const winningCombinations=[
     {combination: [1,2,3]},
@@ -67,12 +68,16 @@ export default function App() {
       }
     
   }    
-
   }
+  
+
 
   useEffect(()=>{
     makeTiles()
   },[])
+
+
+
 
   return (
     <>
@@ -80,7 +85,9 @@ export default function App() {
 
           {tiles.map(tile =>{
             return(
-              <div key={tile.id} className="tile"><button type="button" className={tile.content} onClick={() => changeTile(isO, tile.id)}></button></div>
+              <div key={tile.id} className="tile"><button type="button" className={tile.content} onClick={() => {changeTile(isO,tile.id)
+              checkWinner(winningCombinations, tiles)  
+              }}></button></div>
             )
           })}
       </div>
