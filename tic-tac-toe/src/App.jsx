@@ -69,14 +69,18 @@ export default function App() {
     
   }    
   }
-  
-
 
   useEffect(()=>{
+
     makeTiles()
   },[])
 
+  useEffect(()=>{
+    try{
 
+      checkWinner(winningCombinations, tiles)
+    } catch{}
+  },[tiles])
 
 
   return (
@@ -85,9 +89,7 @@ export default function App() {
 
           {tiles.map(tile =>{
             return(
-              <div key={tile.id} className="tile"><button type="button" className={tile.content} onClick={() => {changeTile(isO,tile.id)
-              checkWinner(winningCombinations, tiles)  
-              }}></button></div>
+              <div key={tile.id} className="tile"><button type="button" className={tile.content} onClick={() => {changeTile(isO,tile.id)}}></button></div>
             )
           })}
       </div>
