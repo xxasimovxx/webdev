@@ -19,6 +19,7 @@
     gap: 5px;
     display: grid;
     grid-template-columns: repeat(3, auto);
+    overflow: hidden;
 }
 
 .tile{
@@ -63,6 +64,7 @@
     height: 5px;
     background-color: yellow;
 }
+
 
 .row2-win{
     border: none;
@@ -134,6 +136,12 @@
     transform:  translateY(-600px) translateX(254px) rotate(135deg);
 }
 
-.blank-line{
-    visibility: hidden;
+.row-hidden{
+    border: none;
+    transform: translateY(-420px);
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    height: 5px;
+    background-color: yellow;
 }

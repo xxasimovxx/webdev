@@ -1,26 +1,24 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
-
 export default function App() {
   const [tiles, setTiles] = useState([]);
   const [isO, setisO] = useState(true);
-  const [change, setChange] = useState(true);
+  const [line, setLine] = useState("blank-line");
 
   const winningCombinations=[
-    {combination: [1,2,3]},
-    {combination: [4,5,6]},
-    {combination: [7,8,9]},
-    {combination: [1,4,7]},
-    {combination: [2,5,8]},
-    {combination: [3,6,9]},
-    {combination: [1,5,9]},
-    {combination: [3,5,7]},]
+    {combination: [1,2,3], line: "row1-win"},
+    {combination: [4,5,6], line: "row2-win"},
+    {combination: [7,8,9], line: "row3-win"},
+    {combination: [1,4,7], line: "column1-win"},
+    {combination: [2,5,8], line: "column2-win"},
+    {combination: [3,6,9], line: "column3-win"},
+    {combination: [1,5,9], line: "diagonal2"},
+    {combination: [3,5,7], line: "diagonal1"},]
 
   function makeTiles(){
         
     for(let i = 1; i <=9; i++){
-      // console.log(i)
 
       setTiles(currentTiles =>{
         return[
@@ -55,7 +53,7 @@ export default function App() {
 
   function checkWinner(winningCombinations, tiles){
 
-    for(const {combination} of winningCombinations){
+    for(const {combination, line} of winningCombinations){
 
       const tileValue1 = tiles[combination[0]-1].content
       const tileValue2 = tiles[combination[1]-1].content
@@ -65,6 +63,7 @@ export default function App() {
       if(tileValue1 != "blank" && tileValue2 == tileValue1 && tileValue3 == tileValue1){
         
         console.log("win");
+        setLine(line)
       }
     
   }    
@@ -93,7 +92,7 @@ export default function App() {
             )
           })}
       </div>
-
+          <div className={line}></div>
     </>
   )
 }
