@@ -4,7 +4,7 @@ import './App.css'
 export default function App() {
   const [tiles, setTiles] = useState([]);
   const [isO, setisO] = useState(true);
-  const [line, setLine] = useState("blank-line");
+  const [line, setLine] = useState("");
 
   const winningCombinations=[
     {combination: [1,2,3], line: "row1-win"},
@@ -64,6 +64,7 @@ export default function App() {
         
         console.log("win");
         setLine(line)
+
       }
     
   }    
@@ -80,6 +81,20 @@ export default function App() {
       checkWinner(winningCombinations, tiles)
     } catch{}
   },[tiles])
+
+ useEffect(() => {
+  if(line != ""){
+    const timer = setTimeout(() => {
+
+      setTiles([])
+      setLine([])
+      setisO(true)
+      makeTiles()
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }
+}, [line]);
 
 
   return (
