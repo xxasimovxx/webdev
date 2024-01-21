@@ -5,8 +5,6 @@ export default function App() {
   const [tiles, setTiles] = useState([]);
   const [isO, setisO] = useState(true);
   const [line, setLine] = useState("");
-  const [oWin, setOWin] = useState(0);
-  const [xWin, setXWin] = useState(0);
 
   const winningCombinations=[
     {combination: [1,2,3], line: "row1-win"},
