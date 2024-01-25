@@ -21,7 +21,7 @@
 }
 
 
-.subject{
+.tile{
   border-radius: 3px;
   width: 700px;
   height: 200px;
@@ -31,7 +31,7 @@
   align-items: center;
 }
 
-.subject-description{
+.tile-description{
   margin-left: 100px;
   width: fit-content;
   display: flex;
