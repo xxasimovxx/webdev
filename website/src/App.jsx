@@ -11,7 +11,7 @@ export default function App() {
     <>
 
        <div className="outer">
-        {Standard_Tile({"Fizyka", "Z"})}
+        <Standard_Tile icon = {faAtom} name = {"Fizyka"} description = {"Zadania maturalne 2010 - 2023"}/>
 
         </div> 
     </>
