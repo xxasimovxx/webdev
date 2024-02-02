@@ -5,9 +5,9 @@ import Asd from "./asd"
 const App = () => {
   return (
     <main>
-      <Navbar />
       <Routes>
         <Route path="/Asd" element={ <Asd/> } />
+        <Route path = "/" element = {<Home/>}/>
       </Routes>
     </main>
   );

@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import './App.css'
+// import './App.css'
 import  Standard_Tile from "./standard_tile.jsx"
 
+import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAtom } from '@fortawesome/free-solid-svg-icons'
 
