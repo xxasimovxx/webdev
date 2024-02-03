@@ -17,6 +17,10 @@ const babelLoader = {
             ['@babel/preset-react', {'runtime': 'automatic'}]]
         }
       }
+    },
+    {
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader']
     }
   ]
 };
@@ -63,5 +67,21 @@ const clientConfig = {
   ],
   resolve
 };
+
+const cssLoader = {
+  module: {
+  rules: [
+    {
+      test: /\.js$/,
+      loader: 'babel-loader',
+      exclude: /node_modules/
+    },
+    {
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader']
+    }
+  ]
+}
+}
 
 module.exports = [serverConfig, clientConfig]
