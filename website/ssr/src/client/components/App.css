@@ -4,6 +4,7 @@
   margin: 0px;
   padding: 0px;
   color: #313131;
+  font-family: "Roboto";
 }
 
 #root {
@@ -29,6 +30,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.tile:hover{
+  background-color: #b7bec2;
 }
 
 .tile-description{

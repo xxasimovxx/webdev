@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+// import './App.css'
 import  Standard_Tile from "./standard_tile.jsx"
 
 import {Link} from 'react-router-dom';
@@ -11,10 +11,14 @@ export default function Home() {
   return (
     <>
 
-       <Link to="/Asd" className="outer">
-        <Standard_Tile icon = {faAtom} name = {"Fizyka"} description = {"Zadania maturalne 2010 - 2023"}/>
+       <div  className="outer">
 
-        </Link> 
+        <Link to="/Asd">
+
+        <Standard_Tile  icon = {faAtom} name = {"Fizyka"} description = {"Zadania maturalne 2010 - 2023"}/>
+        </Link>
+
+        </div> 
     </>
   )
 }

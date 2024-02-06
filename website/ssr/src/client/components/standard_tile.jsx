@@ -1,4 +1,4 @@
-import './App.css'
+// import './App.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Standard_Tile({icon, name, description}){
