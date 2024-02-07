@@ -13,7 +13,7 @@ export default function Home() {
 
        <div  className="outer">
 
-        <Link to="/Asd">
+        <Link to="/kinematyka">
 
         <Standard_Tile  icon = {faAtom} name = {"Fizyka"} description = {"Zadania maturalne 2010 - 2023"}/>
         </Link>
