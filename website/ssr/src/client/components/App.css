@@ -16,11 +16,12 @@
 
 .outer{
   width: 100vw;
-  height: 100vh;
+  height: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction:column ;
+  overflow: auto;
 }
 
 
@@ -33,6 +34,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 80px;
+  min-width: 700px;
 }
 
 .tile:hover{
@@ -40,8 +43,9 @@
 }
 
 .tile-description{
-  margin-left: 100px;
-  width: fit-content;
+  width: 380px;
+  position: relative;
+  margin-right: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,5 +57,24 @@
   height: 50%;
   background-color: black;
 }
+.tile-icon{
+  position: sticky;
+  left: 100px;
+}
+
+.space-holder{
+  width:100%;
+  height: 150px;
+}
+
+.outer-home{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 

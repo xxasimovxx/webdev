@@ -1,4 +1,3 @@
-// import './App.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Standard_Tile({icon, name, description}){
@@ -6,7 +5,7 @@ export default function Standard_Tile({icon, name, description}){
 
         <div className="tile">
 
-            <FontAwesomeIcon icon={icon} size = "6x" />
+            <FontAwesomeIcon className="tile-icon" icon={icon} size = "6x" />
             <div className="tile-description">
 
                 <h1>{name}</h1>
