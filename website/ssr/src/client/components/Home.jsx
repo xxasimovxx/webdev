@@ -11,7 +11,10 @@ export default function Home() {
 
   return (
     <>
-    <Subject_Tile link = "/kinematyka" icon = {faAtom} name = "Fizyka" description = "Zadania maturalne 2010 - 2023" ></Subject_Tile>
+    <div className="outer">
+
+      <Subject_Tile link = "/fizyka" icon = {faAtom} name = "Fizyka" description = "Zadania maturalne 2010 - 2023" ></Subject_Tile>
+    </div>
 
     </>
   )

@@ -25,7 +25,7 @@
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "npm run clean && webpack --config webpack.config.cjs",
-    "start": "npm run build && nodemon --ext js,cjs ./dist/server.cjs"
+    "start": "npm run build && node ./dist/server.cjs"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.23.9",

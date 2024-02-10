@@ -6,13 +6,11 @@ export default function Kinematyka({link,icon,name,description}){
     return(
         <>
 
-       <div  className="outer">
 
         <Link to= {link}>
 
         <Standard_Tile  icon = {icon} name = {name} description = {description}/>
         </Link>
-        </div> 
         </>
     )
 }
