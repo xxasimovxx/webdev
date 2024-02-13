@@ -24,8 +24,10 @@
   "contributors": [],
   "scripts": {
     "clean": " killall -9 node && rm -rf ./dist",
+    "clean_first" : "rm -rf ./dist",
     "build": "npm run clean && webpack --config webpack.config.cjs",
-    "start": "npm run build && nodemon -e js,cjs ./dist/server.cjs"
+    "start": "npm run build && nodemon -e js,cjs ./dist/server.cjs",
+    "start_first" : " nodemon -e js,cjs ./dist/server.cjs"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.23.9",
