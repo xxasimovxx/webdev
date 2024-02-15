@@ -1,5 +1,4 @@
 import  Subject_Tile from "./Subject_Tile"
-import Bar from "./Bar"
 import { faAtom, faBolt, faBoltLightning, faCube, faFaucetDrip, faGuitar, faLightbulb, faMagnet, faMagnifyingGlass, faRoute, faTemperatureQuarter, faTowerCell, faUpDown, faUserAstronaut, faWater } from '@fortawesome/free-solid-svg-icons'
 
 export default function Selection_Fizyka(){
@@ -7,7 +6,6 @@ export default function Selection_Fizyka(){
         <>
 
             <div className="outer">
-                <div className="space-holder"></div>
 
                 <Subject_Tile link = "/fizyka/kinematyka" icon = {faRoute} name = "Kinematyka" description = "Zadania maturalne 2010 - 2023" ></Subject_Tile>
                 <Subject_Tile link = "/fizyka/dynamika" icon = {faUpDown} name = "Dynamika" description = "Zadania maturalne 2010 - 2023" ></Subject_Tile>
@@ -26,9 +24,6 @@ export default function Selection_Fizyka(){
                 <Subject_Tile link = "/fizyka/dynamika" icon = {faTowerCell} name = "Fale Elektromagnetyczne" description = "Zadania maturalne 2010 - 2023" ></Subject_Tile>
                 <Subject_Tile link = "/fizyka/dynamika" icon = {faMagnifyingGlass} name = "Optyka" description = "Zadania maturalne 2010 - 2023" ></Subject_Tile>
                 <Subject_Tile link = "/fizyka/dynamika" icon = {faAtom} name = "Fizyka Atomowa" description = "Zadania maturalne 2010 - 2023" ></Subject_Tile>
-
-                <div className="space-holder"></div>
-
             </div>
         </>
     )
