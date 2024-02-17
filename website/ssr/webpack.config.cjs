@@ -23,9 +23,12 @@ const babelLoader = {
       use: ['style-loader', 'css-loader']
     },
     {
-      test: /\.png$/,
+      test: /\.(png|jpe?g|gif)$/i,
       use: ['file-loader']
-    }
+    },
+    {
+       test: /\.(png|jpg)$/, 
+       use: 'url-loader?limit=8192' }
   ]
 };
 

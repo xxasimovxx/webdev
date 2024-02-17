@@ -71,7 +71,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Show_Subject)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\n\n\n\nfunction Show_Subject(_ref) {\n  var name = _ref.name;\n  var images = importAll(__webpack_require__(\"./src/client/images/kinematyka sync \\\\.png\")).keys;\n  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(\"div\", {\n      className: \"outer\",\n      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"img\", {\n        src: __webpack_require__(/*! ../images/kinematyka/kine.png */ \"./src/client/images/kinematyka/kine.png\"),\n        alt: \"asd\"\n      }), images === null || images === void 0 ? void 0 : images.map(function (key) {\n        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"img\", {\n          src: key,\n          alt: \"asd\"\n        });\n      })]\n    })\n  });\n}\nfunction importAll(r) {\n  var images = {};\n  r.keys().map(function (item) {\n    images[item.replace('./', '')] = r(item);\n  });\n  return images;\n}\n\n//# sourceURL=webpack://ssr/./src/client/components/Show_Subject.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Show_Subject)\n/* harmony export */ });\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\n\n\nfunction Show_Subject(_ref) {\n  var name = _ref.name;\n  var images = importAll(__webpack_require__(\"./src/client/images/kinematyka sync \\\\.png\"));\n  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"div\", {\n      className: \"outer\",\n      children: Object.keys(images).map(function (key) {\n        console.log(key);\n        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(\"img\", {\n          src: __webpack_require__(\"./src/client/components sync recursive ^.*$\")(\"\".concat(key)),\n          alt: \"asd\"\n        }, key);\n      })\n    })\n  });\n}\nfunction importAll(r) {\n  var images = {};\n  r.keys().map(function (item) {\n    images[item.replace('./', '')] = r(item);\n  });\n  return images;\n}\n\n//# sourceURL=webpack://ssr/./src/client/components/Show_Subject.jsx?");
 
 /***/ }),
 
@@ -141,17 +141,6 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
 
 /***/ }),
 
-/***/ "./src/client/images/kinematyka/kine copy.png":
-/*!****************************************************!*\
-  !*** ./src/client/images/kinematyka/kine copy.png ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"f484c67c92770fb5400b587fe8510b55.png\");\n\n//# sourceURL=webpack://ssr/./src/client/images/kinematyka/kine_copy.png?");
-
-/***/ }),
-
 /***/ "./src/client/images/kinematyka/kine.png":
 /*!***********************************************!*\
   !*** ./src/client/images/kinematyka/kine.png ***!
@@ -159,7 +148,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"f484c67c92770fb5400b587fe8510b55.png\");\n\n//# sourceURL=webpack://ssr/./src/client/images/kinematyka/kine.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"d061a5471fa17ce790940f2f3e5444a4.png\");\n\n//# sourceURL=webpack://ssr/./src/client/images/kinematyka/kine.png?");
+
+/***/ }),
+
+/***/ "./src/client/images/kinematyka/kinecopy.png":
+/*!***************************************************!*\
+  !*** ./src/client/images/kinematyka/kinecopy.png ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"d061a5471fa17ce790940f2f3e5444a4.png\");\n\n//# sourceURL=webpack://ssr/./src/client/images/kinematyka/kinecopy.png?");
 
 /***/ }),
 
@@ -447,13 +447,23 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/client/components sync recursive ^.*$":
+/*!******************************************!*\
+  !*** ./src/client/components/ sync ^.*$ ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var map = {\n\t\"./App\": \"./src/client/components/App.jsx\",\n\t\"./App.css\": \"./src/client/components/App.css\",\n\t\"./App.jsx\": \"./src/client/components/App.jsx\",\n\t\"./Home\": \"./src/client/components/Home.jsx\",\n\t\"./Home.jsx\": \"./src/client/components/Home.jsx\",\n\t\"./Selection_Fizyka\": \"./src/client/components/Selection_Fizyka.jsx\",\n\t\"./Selection_Fizyka.jsx\": \"./src/client/components/Selection_Fizyka.jsx\",\n\t\"./Show_Subject\": \"./src/client/components/Show_Subject.jsx\",\n\t\"./Show_Subject.jsx\": \"./src/client/components/Show_Subject.jsx\",\n\t\"./Subject_Tile\": \"./src/client/components/Subject_Tile.jsx\",\n\t\"./Subject_Tile.jsx\": \"./src/client/components/Subject_Tile.jsx\",\n\t\"./standard_tile\": \"./src/client/components/standard_tile.jsx\",\n\t\"./standard_tile.jsx\": \"./src/client/components/standard_tile.jsx\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/client/components sync recursive ^.*$\";\n\n//# sourceURL=webpack://ssr/./src/client/components/_sync_^.*$?");
+
+/***/ }),
+
 /***/ "./src/client/images/kinematyka sync \\.png":
 /*!***************************************************************!*\
   !*** ./src/client/images/kinematyka/ sync nonrecursive \.png ***!
   \***************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var map = {\n\t\"./kine copy.png\": \"./src/client/images/kinematyka/kine copy.png\",\n\t\"./kine.png\": \"./src/client/images/kinematyka/kine.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/client/images/kinematyka sync \\\\.png\";\n\n//# sourceURL=webpack://ssr/./src/client/images/kinematyka/_sync_nonrecursive_\\.png?");
+eval("var map = {\n\t\"./kine.png\": \"./src/client/images/kinematyka/kine.png\",\n\t\"./kinecopy.png\": \"./src/client/images/kinematyka/kinecopy.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/client/images/kinematyka sync \\\\.png\";\n\n//# sourceURL=webpack://ssr/./src/client/images/kinematyka/_sync_nonrecursive_\\.png?");
 
 /***/ }),
 
