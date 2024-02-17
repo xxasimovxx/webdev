@@ -1,6 +1,7 @@
 import {Routes, Route} from 'react-router-dom';
 import Home from './Home';
 import Selection_Fizyka from './Selection_Fizyka';
+import Show_Subject from './Show_Subject';
 
 const App = () => {
   return (
@@ -8,7 +9,7 @@ const App = () => {
       <div className="bar"></div>
       <Routes>
         <Route path= "/fizyka" element= {<Selection_Fizyka/>} />
-        <Route path = "fizyka/kinematyka" element = {<Home/>}/>
+        <Route path = "fizyka/kinematyka" element = {<Show_Subject name = "kinematyka"/>}/>
         <Route path = "/" element = {<Home/>}/>
       </Routes>
       <div className="bar"></div>

@@ -21,6 +21,10 @@ const babelLoader = {
     {
       test: /\.css$/,
       use: ['style-loader', 'css-loader']
+    },
+    {
+      test: /\.png$/,
+      use: ['file-loader']
     }
   ]
 };
