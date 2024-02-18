@@ -24,7 +24,8 @@ const babelLoader = {
     },
     {
       test: /\.(png|jpe?g|gif)$/i,
-      use: ['file-loader']
+      // use: ['file-loader'],
+      type: "src/client/components/images/kinematyka"
     },
     {
        test: /\.(png|jpg)$/, 
