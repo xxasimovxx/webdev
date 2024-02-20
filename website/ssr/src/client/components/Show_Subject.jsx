@@ -1,7 +1,11 @@
-export default function Show_Subject({name}){
+const fs = require("fs")
+const files = fs.readdirSync("./images/kinematyka/")
+console.log(files)
+
+export default function Show_Subject({name}){ 
 
     // const images = importAll(require.context('./images/kinematyka/', false, /\.png/));
-    // images = require.context('./images/kinematyka/', false, /\.png/).keys()
+    console.log(require.context('./images/kinematyka/', false, /\.png/))
     return(
         <>
 
