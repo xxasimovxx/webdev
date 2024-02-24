@@ -10,7 +10,7 @@ const App = () => {
       <Routes>
         <Route path= "/fizyka" element= {<Selection_Fizyka/>} />
         <Route path = "fizyka/kinematyka" element = {<Show_Subject name = "kinematyka"/>}/>
-        <Route path = "/" element = {<Home/>}/>
+        <Route path = "/dist/index.html" element = {<Home/>}/>
       </Routes>
       <div className="bar"></div>
     </main>

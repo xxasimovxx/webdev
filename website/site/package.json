@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run clean && webpack --config webpack.config.cjs",
+    "clean": "rm -rf ./dist",
+    "build": "killall -9 node && npm run clean && webpack --config webpack.config.cjs && node live-server.cjs",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -14,6 +15,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "babel-loader": "^9.1.3",
+    "live-server": "^1.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

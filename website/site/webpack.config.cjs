@@ -47,7 +47,6 @@ const clientConfig = {
       * Appends /static to index.html when looking for client.js
       * This is where Express is serving static files from
       */
-    publicPath: '/static',
     filename: 'client.js',
   },
   module: babelLoader,
