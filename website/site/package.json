@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "clean": "rm -rf ./dist",
-    "build": " npm run clean && webpack --config webpack.config.cjs",
+    "build": "npm run clean && webpack --config webpack.config.cjs",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
