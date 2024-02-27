@@ -13,7 +13,7 @@ const App = () => {
           path="/fizyka/kinematyka"
           element={<Show_Subject name="kinematyka" />}
         />
-        <Route path="/dist/index.html" element={<Home />} />
+        <Route path="/" element={<Home />} />
       </Routes>
       <div className="bar"></div>
     </main>

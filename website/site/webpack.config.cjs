@@ -38,6 +38,15 @@ const resolve = {
   extensions: [".js", ".jsx"],
 };
 
+const liveServer = {
+  mode: "development",
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    port: 3000,
+    open: true,
+  },
+};
+
 const clientConfig = {
   target: "web",
   mode: "development",
@@ -49,6 +58,12 @@ const clientConfig = {
      * This is where Express is serving static files from
      */
     filename: "client.js",
+  },
+
+  devServer: {
+    static: path.join(__dirname, "dist"),
+    port: 3000,
+    open: true,
   },
   module: babelLoader,
   plugins: [
