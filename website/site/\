@@ -1,0 +1,28 @@
+const importAll = (require) =>
+  require.keys().reduce((acc, next) => {
+    acc[next.replace("./", "")] = require(next);
+    return acc;
+  }, {});
+
+export default function Show_Subject({ name }) {
+  return (
+    <>
+      <div className="outer">
+        {Object.keys(
+          importAll(require.context(`./images/${name}`, false, /\.png/)),
+        ).map((key) => {
+          return (
+            <div key={key}>
+              <img
+                key={key}
+                src={require(`./images/${name}/` + key)}
+                alt="asd"
+              />
+              ,
+            </div>
+          );
+        })}
+      </div>
+    </>
+  );
+}
