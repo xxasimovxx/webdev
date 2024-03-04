@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": " killall -9 node &&nodemon server.js"
+    "dev": " killall -9 node && nodemon server.js"
   },
   "keywords": [],
   "author": "",
